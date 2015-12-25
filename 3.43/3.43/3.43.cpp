@@ -1,5 +1,5 @@
-// 3.43.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
-//·¶Î§for
+// 3.43.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
+//èŒƒå›´for
 
 #include "stdafx.h"
 #include "iostream"
@@ -14,7 +14,7 @@ int main()
 		{4,5,6,7},
 		{8,9,10,11} 
 		};
-	size_t cnt = 0;
+	
 	for (int(&row)[4] : ia) {
 		cout << endl;
 		for (int &col : row) {
