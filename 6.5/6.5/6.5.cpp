@@ -5,7 +5,13 @@
 #include "iostream"
 using namespace std;
 
-int jiechen(int a);
+
+int main()
+{
+	cout << jiechen(2);
+	int s; cin >> s;
+    return 0;
+}
 
 int jiechen(int a)
 {
@@ -17,10 +23,3 @@ int jiechen(int a)
 	return ret;
 			
 }
-int main()
-{
-	cout << jiechen(5);
-	int s; cin >> s;
-    return 0;
-}
-
