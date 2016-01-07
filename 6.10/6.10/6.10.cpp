@@ -5,18 +5,17 @@
 #include "iostream"
 using namespace std;
 
-void jiaohuan(int *a, int *b)
+void jiaohuan(int &a, int &b)
 {
-	int c = *a;
-	*a = *b;
-	*b = c;
+	int c = a;
+	a = b;
+	b = c;
 }
 int main()
 {
 	int a = 3, b = 2;
-	jiaohuan(&a, &b);
+	jiaohuan(a, b);
 	cout << a << b;
-	cin >> a;
-    return 0;
+	
+	return 0;
 }
-
