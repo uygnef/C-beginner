@@ -5,25 +5,27 @@
 #include "iostream"
 #include "string"
 using namespace std;
-bool is_captain(const string a,int &time)
+void is_captain( string &a,int &time)
 {
-	for (auto s : a)
+	for (auto &s : a)
 	{	
 		if (isupper(s))
 		{
-			return true;
-		}	
+			s=tolower(s);	
 		++time;
+		}	
+		
 	}
-	return false;
+	
 }
 
 int main()
 {
-	int m=1;
-	if (is_captain("Sfffffffffffs", m))
-		cout << "第"<<m<<"个是大写";
-	else cout << "无大写";
+	int m=0;
+	string a = "SFFFFFfffffs";
+		is_captain(a, m);
+	cout << a<<m;
+	
 
 
 	int sd;
